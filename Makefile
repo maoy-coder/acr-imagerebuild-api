@@ -5,7 +5,7 @@ run:
 	docker run -p 5000:5000 pxv-acr-demo:latest
 
 run-acr:
-	docker run -p 5000:5000 --pull always pxvacriadd.azurecr.io/pxv-acr-demo:latest
+	docker run --pull always pxvacriadd.azurecr.io/pxv-acr-demo:latest bash -c env
 
 acr-build-api:
 	az acr build --resource-group phlex-acr-dev-iadd --registry pxvacriadd -t pxv-acr-demo:latest .

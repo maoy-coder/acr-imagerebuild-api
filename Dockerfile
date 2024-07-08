@@ -1,5 +1,5 @@
 # Use the official Python image from the Docker Hub
-FROM pxvacriadd.azurecr.io/base-image:9-stable
+FROM pxvacriadd.azurecr.io/base-image:10-stable
 
 # Set the working directory in the container
 WORKDIR /app
