@@ -14,4 +14,4 @@ acr-list-runs:
 	az acr task list-runs --registry pxvacriadd -o table
 
 acr-create-task:
-	az acr task create --name acr-pxv-acr-demo-20-0-base-image-updated --registry pxvacriadd -t pxvacriadd.azurecr.io/pxv-acr-demo:20.0 --base-image-trigger-enabled true --commit-trigger-enabled false --context https://github.com/maoy-coder/acr-imagerebuild-api.git#release/20.0 --file Dockerfile --base-image-trigger-type All --no-cache true --schedule "*/5 * * * *"
+	az acr task create --name acr-pxv-acr-demo-20-0-base-image-updated-commit --registry pxvacriadd -t pxvacriadd.azurecr.io/pxv-acr-demo:20.0 --base-image-trigger-enabled true --commit-trigger-enabled false --context https://github.com/maoy-coder/acr-imagerebuild-api.git#36f4df111fd01a17786c139849c089efeb8e08d7 --file Dockerfile --base-image-trigger-type All --no-cache true --schedule "*/1 * * * *"
